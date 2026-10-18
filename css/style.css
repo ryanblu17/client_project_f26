@@ -1,0 +1,92 @@
+/* SOURCES
+    I used these W3Schools pages as references and adapted the examples
+   to my site (my own selectors, rem units, UM brand colors, and sizes).
+   
+   Images shrink to fit the screen (img)
+   https://www.w3schools.com/css/css_rwd_images.asp
+
+   Tappable nav links + current-page highlight (nav a, .active)
+   https://www.w3schools.com/css/css_navbar_vertical.asp
+
+   Two-column grids (nav ul, .two_col)
+   https://www.w3schools.com/css/css_grid.asp
+
+   Heading sizes in rem (h1, h2, h3)
+   https://www.w3schools.com/css/css_units_relative.asp
+
+   Logo width + video max-width (header img, iframe)
+   https://www.w3schools.com/css/css_dimension.asp
+
+   Space around page edges (body padding)
+   https://www.w3schools.com/css/css_padding.asp
+
+   Space below sections + headings (margin-bottom)
+   https://www.w3schools.com/css/css_margin.asp
+
+   Bold headings (font-weight)
+   https://www.w3schools.com/css/css_font_style.asp
+*/
+.skip {
+    position: absolute;
+    top: -100px;
+}
+.skip:focus {
+    top: 25px;
+}
+.active {
+    border-bottom: 4px solid #00274C;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+nav a {
+  display: block;
+  color: #00274c;
+  padding: 0.75rem;
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+header img{
+   width: 30%;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.two_col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+body{
+    color:#00274C;
+    padding: 1rem;
+}
+h1, h2, h3 {
+    font-weight:bold ;
+    margin-bottom: 0.5rem;
+}
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
